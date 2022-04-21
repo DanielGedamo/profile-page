@@ -1,0 +1,167 @@
+#grid_div {
+  display: grid;
+  font-size: x-large;
+  grid-template-areas:
+    "header header header header"
+    "sidebar main main main"
+    "sidebar main main main"
+    "gallery gallery gallery gallery"
+    "footer footer footer footer";
+}
+
+#header {
+  background-color: rgb(138, 123, 135);
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  justify-content: space-around;
+  height: 20vh;
+}
+
+.social {
+  width: 5vw;
+  height: 5vw;
+}
+
+#sidebar{
+  background-color: rgb(138, 123, 135);
+  grid-area: sidebar;
+  color: rgb (197, 236, 238);
+  display: flex;
+  flex-direction: column;
+
+  border: 2px solid beige;
+}
+
+list {
+  margin-top: 20%;
+  list-style: none;
+  font-size: 2vw;
+
+  margin-right: auto;
+}
+
+#main {
+  background-color: rgb(138, 123, 135);
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  font-style: oblique;
+  text-align: center;
+}
+#c {
+  margin-top: 6vh;
+}
+#h1 {
+  margin-top: 3vh;
+}
+
+#po {
+  width: 70px;
+  height: 70px;
+  border: 1px solid white;
+  border-radius: 100%;
+
+  margin-top: 3vh;
+}
+
+#po:hover {
+  transform: scale(1.5);
+  filter: drop-shadow(5px 5px 4px #1e1e1e);
+}
+
+#ss {
+  width: 30vw;
+  height: 30vh;
+  display: flex;
+  margin-left: 20vw;
+}
+
+#footer {
+  background-image: url(imag.css/פ1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 18vh;
+  color: black;
+}
+.contact {
+  margin-right: 1vw;
+}
+@keyframes gallery {
+  0% {
+    background-image: url(imag.css/dapo.jpg);
+  }
+  40% {
+    background-image: url(imag.css/פ1.jpg);
+  }
+  70% {
+    background-image: url(imag.css/פ.png);
+  }
+  100% {
+    background-image: url(imag.css/פ2.jpg);
+  }
+}
+#gallery {
+  height: 40vh;
+  width: 100vw;
+  grid-area: gallery;
+  background-image: url(imag.css/dapo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation-iteration-count: infinite;
+  animation-name: gallery;
+  animation-duration: 30s;
+}
+@media screen and (max-width: 600px) {
+  #grid_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95vw;
+    height: 440vh;
+
+    text-align: center;
+  }
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  grid-area: header;
+  height: 7vh;
+  margin-top: -34%;
+
+}
+#main {
+  display: flex;
+  flex-direction: column;
+
+  grid-area: main;
+}
+#sidebar{
+    display: none;
+    
+    height: 7vh;
+    grid-area:sidebar;
+}
+#c {
+  margin-top: 6vh;
+}
+
+#gallery {
+  
+  grid-area: gallery;
+}
+#footer {
+  grid-area: footer;
+  display: flex;
+  height: 11vh;
+}
+}
