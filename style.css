@@ -30,10 +30,16 @@
   color: rgb (197, 236, 238);
   display: flex;
   flex-direction: column;
-
-  border: 2px solid beige;
+  text-decoration: none;color: #000;
+  border: 2px solid rgb(8, 8, 8);
 }
-
+.nav{
+  text-decoration: none;color: #000
+}
+#menu{
+  font-size: xx-large;
+  background-color: rgb(118 118 185);
+}
 
 
 #main {
