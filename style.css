@@ -39,7 +39,7 @@
   border: 2px solid rgb(10, 10, 10);
 }
 .nav{
-  text-decoration: none;color: #000
+  text-decoration: none;color: #000;
 }
 
 
@@ -51,6 +51,7 @@
   font-family: sans-serif;
   font-style: oblique;
   text-align: center;
+  padding: 4vh;
 }
 .p-s{
     width: 25vw;
@@ -132,6 +133,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    
   }
 
 #header {
@@ -145,8 +147,11 @@
 #main {
   display: flex;
   flex-direction: column;
-
+  padding: 3vh;
   grid-area: main;
+}
+#po{
+  margin-left: 20%;
 }
 .p-s{
         width: 35vw;
@@ -167,6 +172,9 @@
     position: -webkit-sticky;
   position: sticky;
   top: 0;
+  border: 2px solid black;
+  background-color: #6f7fd6;
+}
     
      
     
