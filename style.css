@@ -1,11 +1,10 @@
 #grid_div {
-
   display: grid;
   font-size: x-large;
   background-image: url(imag.css/פ3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  
+
   grid-template-areas:
     "header header header header"
     "sidebar main main main"
@@ -15,7 +14,6 @@
 }
 
 #header {
-  
   grid-area: header;
   display: flex;
   align-items: center;
@@ -29,22 +27,24 @@
   height: 5vw;
 }
 
-#sidebar{
- 
+#sidebar {
   grid-area: sidebar;
   color: rgb (197, 236, 238);
   display: flex;
   flex-direction: column;
-  text-decoration: none;color: #000;
+  text-decoration: none;
+  color: #000;
   border: 2px solid rgb(10, 10, 10);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
-.nav{
-  text-decoration: none;color: #000;
+.nav {
+  text-decoration: none;
+  color: #000;
 }
-
 
 #main {
-  
   grid-area: main;
   display: flex;
   flex-direction: column;
@@ -53,9 +53,9 @@
   text-align: center;
   padding: 4vh;
 }
-.p-s{
-    width: 25vw;
-    height: 20vh;
+.p-s {
+  width: 25vw;
+  height: 20vh;
 }
 #c {
   margin-top: 6vh;
@@ -63,7 +63,6 @@
 #h1 {
   margin-top: 3vh;
 }
-
 
 #po {
   width: 70px;
@@ -116,7 +115,7 @@
   }
 }
 #gallery {
-  height: 40vh;
+  height: 47vh;
   width: 100vw;
   grid-area: gallery;
   background-image: url(imag.css/dapo.jpg);
@@ -133,72 +132,64 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    
   }
 
-#header {
-  display: flex;
-  justify-content: space-between;
-  grid-area: header;
-  height: 7vh;
-  margin-top: 0%;
-
-}
-#main {
-  display: flex;
-  flex-direction: column;
-  padding: 3vh;
-  grid-area: main;
-}
-#po{
-  margin-left: 20%;
-}
-.p-s{
-        width: 35vw;
-        height: 10vh;
-}
-#sidebar{
-
+  #header {
+    display: flex;
+    justify-content: space-between;
+    grid-area: header;
+    height: 7vh;
+    margin-top: 0%;
+  }
+  #main {
+    display: flex;
+    flex-direction: column;
+    padding: 3vh;
+    grid-area: main;
+  }
+  #po {
+    margin-left: 20%;
+  }
+  .p-s {
+    width: 35vw;
+    height: 10vh;
+  }
+  #sidebar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     color: #1e1e1e;
-    font-style: oblique ;
+    font-style: oblique;
     height: 3vh;
     width: 100%;
     font-size: small;
     border: black;
     position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  border: 2px solid black;
-  background-color: #6f7fd6;
+    position: sticky;
+    top: 0;
+    border: 2px solid black;
+    background-color: #6f7fd6;
+  }
 }
-    
-     
-    
-    
-}
-.nav{
-  text-decoration: none;color: #000;
+.nav {
+  text-decoration: none;
+  color: #000;
   border: #000 solid 1px;
   width: 100%;
   height: 100%;
   background-color: rgb(35 95 107 / 21%);
-
 }
 #c {
   margin-top: 6vh;
 }
 
 #gallery {
-   height: 7vh;
+  height: 27vh;
   grid-area: gallery;
 }
 #footer {
   grid-area: footer;
   display: flex;
   height: 11vh;
-}
 }
